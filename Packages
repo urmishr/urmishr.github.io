@@ -2,7 +2,7 @@ Package: com.urmishr.lgsquares
 Version: 0.0.1
 Architecture: iphoneos-arm
 Maintainer: UrmishR <ramani.urmish@gmail.com>
-Depends: anemone, winterboard
+Depends: Anemone, winterboard
 Filename: /LGSqures.deb
 Size: 2248
 MD5sum: 7da975f01a793088f467a61981d4ef16
