@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	    My Site
+	    My Site 1
         Built with Blocs
 -----------------------------------------------------------------------------------*/
 
@@ -94,6 +94,57 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 }
 
 
+/* Dark theme */
+
+.d-bloc{
+	color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+	color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+	border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+	border-color:rgba(255,255,255,.2);
+}
+.d-bloc .a-btn,.d-bloc .navbar a,.d-bloc .navbar-brand, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+	color:rgba(255,255,255,.6);
+}
+.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc .navbar-brand:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
+	color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
+.d-bloc .panel{
+	color:rgba(0,0,0,.5);
+}
+.d-bloc .panel button:hover{
+	color:rgba(0,0,0,.7);
+}
+.d-bloc .panel icon{
+	border-color:rgba(0,0,0,.7);
+}
+.d-bloc .panel .divider-h span{
+	border-color:rgba(0,0,0,.1);
+}
+.d-bloc .panel .a-btn{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .panel .a-btn:hover{
+	color:rgba(0,0,0,1);
+}
+.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover{
+	color:rgba(0,0,0,.7);
+	border-color:rgba(0,0,0,.3);
+}
+
+
 /* Light theme */
 
 .d-bloc .panel,.l-bloc{
@@ -122,27 +173,8 @@ a,button{outline: none!important;} /* Prevent ugly blue glow on chrome and safar
 	border-color:rgba(0,0,0,.3);
 }
 
-/* Column No Gutters */
-
-.row-no-gutters{
-	margin-right:0;
-	margin-left:0;
-}
-.row.row-no-gutters > [class^="col-"],.row.row-no-gutters > [class*=" col-"] {
-	padding-right: 0;
-	padding-left: 0;
-}
-
 /* Bloc text custom styling */
 
-#bloc-2 h2{
-	font-size: 28.571428298950195px;
-	line-height: 42.85714340209961px;
-}
-#bloc-2 p{
-	font-size: 24.999999046325684px;
-	line-height: 53.33333206176758px;
-}
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -266,25 +298,13 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
-.mg-sm{
-	margin-top:10px;
-	margin-bottom:5px;
-}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
 }
-img.mg-sm,img.mg-md,img.mg-lg{
-	margin-top: 0;
-}
-img.mg-sm{
-	margin-bottom:10px;
-}
-img.mg-md{
-	margin-bottom:30px;
-}
-img.mg-lg{
-	margin-bottom:50px;
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
 }
 
 /* = Buttons
@@ -306,43 +326,26 @@ button{
 	outline: none!important;
 }
 
+.a-btn{
+	padding: 6px 10px 6px 0;
+	line-height: 1.42857143;
+	display:inline-block;
+}
+.text-center .a-btn{
+	padding: 6px 0;
+}
+.a-block{
+	width:100%;
+	text-align: left;
+}
 .btn .caret{
 	margin:0 0 0 5px}.dropdown a .caret{
 	margin:0 0 0 5px}.btn-dropdown .dropdown-menu .dropdown{
 	padding: 3px 20px;
 }
 
-/* = Icons
--------------------------------------------------------------- */
-.icon-md{
-	font-size:30px!important;
-}
 
-/* Image Frame */
-.img-frame,.img-frame-md,.img-frame-lg,.img-frame-rd,.img-frame-rd-md,.img-frame-rd-lg{
-	background:#FFF;
-	border:1px solid rgba(0,0,0,0.1);
-	box-shadow:0 2px 2px rgba(0,0,0,0.05);
-	padding:4px;
-}
-.img-frame{
-	border-radius:3px;
-}
-.img-frame-md,.img-frame-lg{
-	border-radius:6px;
-}
-.img-frame-md,.img-frame-rd-md{
-	padding:8px;
-}
-.img-frame-lg,.img-frame-rd-lg{
-	padding:14px;
-}
 
-/* = Text & Icon Styles
--------------------------------------------------------------- */
-.lg-shadow{
-	text-shadow:0 2px 5px rgba(0,0,0,.5);
-}
 
 
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
@@ -386,6 +389,26 @@ iframe{
 	font-size: 14px;
 	opacity: 1;
 }
+/* = iPhone 6 Devices
+-------------------------------------------------------------- */
+
+.blocsapp-device-iphone6{
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	display: block;
+	width:100%;
+	height:auto;
+	padding: 18%;
+}
+.blocsapp-device-iphone6 img{
+	width:100%;
+	height:auto;
+	margin: 0 auto;
+}
+.blocsapp-device-iphone6.iphone6-space-grey{
+	background-image:url("img/Apple-iPhone-6s-Space-Gray.png");
+}
 
 /* = Custom Styling
 -------------------------------------------------------------- */
@@ -395,27 +418,22 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .container{
 	max-width:1170px;
-	background:linear-gradient(0deg, #FFFFFA, #FFFFFF);
 }
 .hero-bloc-text{
 	font-size:55px;
 }
+.hero-bloc-text-sub{
+	font-size:36px;
+}
+.blocs-mobile-signup-text{
+	font-size:33px;
+}
 .statement-bloc-text{
-	line-font-style:italic;
+	line-height:38px;
+	font-style:italic;
 	font-size:28px;
 	text-align:center;
 	font-weight:lighter;
-	display:;
-	padding:10px 10px 10px 10px;
-	background:linear-gradient(351deg, #FEFFF0, #FFFFFF);
-	text-shadow:0px 0px 0px #000000;
-	box-shadow:0px 0px 6px #7D7184;
-	overflow:visible;
-}
-.statement-bloc-text:hover{
-	background:linear-gradient(225deg, #FFFFFF, #FFFFE8);
-	float:none;
-	overflow:hidden;
 }
 .mount-italy-hero-text-s{
 	font-size:60px;
@@ -426,20 +444,33 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .hero-text-vc{
 	margin-top:50%;
 }
-.hero-bloc-text-sub{
-	font-size:36px;
-}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
+.bgc-dim-gray{
+	background-color:#66697C;
+}
 .bgc-white{
 	background-color:#ffffff;
 }
+/* Text colour styles */
 
-/* Bloc image backgrounds */
+.tc-black{
+	color:#000000!important;
+}
+/* Button colour styles */
+
+.btn-black{
+	background:#000000;
+	color:#FFFFFF!important;
+}
+.btn-black:hover{
+	background:#000000;
+	color:#FFFFFF!important;
+}
 
 
 
@@ -627,45 +658,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
  }
 
 @media (max-width: 420px){
-	.hero-text-vc{
-	margin:0px 0px 0px 0px;
-}
-.statement-bloc-text{
-	box-shadow:0px 0px 9px #7D7184;
-	display:block;
-	overflow:visible;
-	float:none;
-	padding:10px 10px 10px 10px;
-	margin:20px 20px 20px 20px;
-}
-.hero-bloc-text-sub{
-}
-.mount-italy-hero-text-s{
-	overflow:visible;
-	float:initial;
-	background:linear-gradient(234deg, rgba(36,40,208,0.0), rgba(255,73,131,0.0));
-	border-style:none;
-	margin:0px 0px 0px 0px;
-	padding:43px 43px 43px 43px;
-}
-.mount-italy-hero-text-sub-s{
-	margin:0px 0px 0px 0px;
-	padding:0px 0px 0px 0px;
-}
- 
-/* Mobile Text Margin Offsets */
-.mg-md-xs{
-	margin-top:10px;
-	 margin-bottom:20px;
-}
-#bloc-2 h2{
-	font-size: 18.571428298950195px;
-	line-height: 40px;
-}
-/* = Text Mobile Alignment Classes
--------------------------------------------------------------- */
-.text-center-xs{
+	.blocs-mobile-signup-text{
 	text-align:center;
 }
+.hero-text-vc{
+	margin-top:0px;
 }
+ }
 
