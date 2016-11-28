@@ -210,7 +210,7 @@
 })(jQuery);
 
 window.scroll({
-  top: 2500,
+  top: 1500,
   left: 0,
   behavior: 'smooth'
 });
